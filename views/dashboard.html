@@ -1,0 +1,40 @@
+<div ng-controller="MainController">
+	<div class="dash_back">
+		<div class="left_panel_m">
+			<p class="your_plist">Your Playlists</p>
+			<div class="center_p">
+				<div class="flexcroll">
+					<div class="playlist_item" ng-repeat="x in playlists">
+						<p class="your_plist_item" style="color: white;">{{x}}</p>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="right_panel_m">
+			<div class="top_information">
+				<div class="img_thumb">
+					<img ng-src="{{profpic}}" class="wid_img_user"> 
+
+				</div>
+				<div class="info_user">
+				<p class="your_plist_item_info">Name: {{names}} | Followers: {{followers}} | Email: {{email}}</p>
+				</div>
+			</div>
+			<div class="top_information_bottom">
+				<p class="your_plist_item" style="color: black;">Other info here</p>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- <button ng-click="printToken()">Get Token</button><br><br>
+<button ng-click="getUser()">Get User Info</button><br><br>
+<button ng-click="miekifyMe()">Miekify Me</button><br><br>
+<button ng-click="getSavedSongs()">Get Saved Songs</button><br><br>
+<button ng-click="getUserPlaylists()">Get User Playlists</button><br><br> -->
